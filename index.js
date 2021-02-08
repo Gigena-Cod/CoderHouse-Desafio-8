@@ -1,14 +1,6 @@
 let Productos = []
 let ban = true
-
-class Producto{
-
-    constructor(title,price,thumbnail){
-        this.title = title
-        this.price = price
-        this.thumbnail = thumbnail
-    }
-}
+let Producto = require ('./Producto')
 
 
 const express = require("express")
@@ -31,9 +23,6 @@ process.on('uncaughtException', function(err) {
          console.log(err);
 
 }); 
-
-
-
 
 
 
