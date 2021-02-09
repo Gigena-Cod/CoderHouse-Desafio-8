@@ -33,7 +33,7 @@ app.post('/api/productos/guardar',(req,res) => {
 
         let inc = Productos.length
 
-        let producto =req.body
+        let producto =new Producto(req.body.title,req.body.price,req.body.thumbnail)
 
         producto.id = inc+1
 
